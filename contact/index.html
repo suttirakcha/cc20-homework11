@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style type="text/tailwindcss">
+      * {
+        font-family: "Heebo", sans-serif;
+      }
+      @layer base {
+        .main-color {
+          @apply text-[#21243D];
+        }
+        .light-bg-color {
+          @apply bg-[#EDF7FA];
+        }
+        .page-section {
+          @apply max-w-[1024px] mx-auto p-8;
+        }
+      }
+    </style>
+    <title>Work</title>
+  </head>
+  <body>
+    <header class="bg-white fixed inset-0 bottom-auto">
+      <div
+        class="flex items-center max-w-[1360px] justify-between mx-auto px-8 py-4 w-full"
+      >
+        <a href="../" class="text-xl font-medium">HOME</a>
+        <div>
+          <nav class="hidden md:flex gap-8 items-center text-xl font-medium">
+            <a href="../blog/" class="hover:text-red-400">Blog</a>
+            <a href="../work/" class="hover:text-red-400">Works</a>
+            <a href="../contact/" class="font-bold text-red-400">Contact</a>
+          </nav>
+          <button class="md:hidden text-3xl main-color">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main class="mt-[60px] lg:mt-[120px] grow">
+      <section class="page-section space-y-[18px] lg:space-y-[55px]">
+        <h1
+          class="text-[30px] lg:text-[44px] font-bold leading-[60px] main-color"
+        >
+          Contact
+        </h1>
+        <form
+          action="#"
+          class="space-y-6 p-6 border border-gray-200 rounded-lg"
+        >
+          <div class="grid md:grid-cols-2 gap-6">
+            <div class="gap-1 flex flex-col">
+              <label for="first-name" class="main-color">First name</label>
+              <input
+                type="text"
+                id="first-name"
+                placeholder="John"
+                class="border border-gray-200 rounded-md h-12 px-3"
+              />
+            </div>
+            <div class="gap-1 flex flex-col">
+              <label for="last-name" class="main-color">Last name</label>
+              <input
+                type="text"
+                id="last-name"
+                placeholder="Doe"
+                class="border border-gray-200 rounded-md h-12 px-3"
+              />
+            </div>
+          </div>
+
+          <div class="gap-1 flex flex-col">
+            <label for="email" class="main-color">Email</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="example@mail.com"
+              class="border border-gray-200 rounded-md h-12 px-3"
+            />
+          </div>
+
+          <div class="gap-1 flex flex-col">
+            <label for="subject" class="main-color">Subject</label>
+            <input
+              type="email"
+              id="subject"
+              placeholder="e.g. Example Subject"
+              class="border border-gray-200 rounded-md h-12 px-3"
+            />
+          </div>
+
+          <div class="gap-1 flex flex-col">
+            <label for="content" class="main-color">Content</label>
+            <textarea
+              id="content"
+              placeholder="e.g. lorem ipsum"
+              class="border border-gray-200 rounded-md p-3 h-40"
+            ></textarea>
+          </div>
+
+          <div class="flex gap-4">
+            <button
+              type="submit"
+              class="rounded-xs bg-red-400 px-5 h-12 text-white hover:bg-red-300 cursor-pointer text-xl w-fit"
+            >
+              Submit
+            </button>
+            <button
+              type="reset"
+              class="rounded-xs bg-red-400 px-5 h-12 text-white hover:bg-red-300 cursor-pointer text-xl w-fit"
+            >
+              Clear
+            </button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer
+      class="py-[54px] main-color flex flex-col items-center justify-center gap-y-[26px] relative top-0"
+    >
+      <div class="flex items-center text-3xl gap-[35px]">
+        <a href="#">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a href="#">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="#">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+        <a href="#">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </div>
+      <h2 class="text-sm">Copyright &copy;2025 All rights reserved</h2>
+    </footer>
+  </body>
+</html>

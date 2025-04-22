@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style type="text/tailwindcss">
+      * {
+        font-family: "Heebo", sans-serif;
+      }
+      @layer base {
+        .main-color {
+          @apply text-[#21243D];
+        }
+        .light-bg-color {
+          @apply bg-[#EDF7FA];
+        }
+        .page-section {
+          @apply max-w-[1024px] mx-auto p-8;
+        }
+        .badge {
+          @apply bg-[#142850] pt-[1px] md:pt-0 px-2.5 rounded-2xl text-white text-base md:text-lg font-black h-[25px];
+        }
+      }
+    </style>
+    <title>Works</title>
+  </head>
+  <body>
+    <header class="bg-white fixed inset-0 bottom-auto">
+      <div
+        class="flex items-center max-w-[1360px] justify-between mx-auto px-8 py-4 w-full"
+      >
+        <a href="../" class="text-xl font-medium">HOME</a>
+        <div>
+          <nav class="hidden md:flex gap-8 items-center text-xl font-medium">
+            <a href="../blog/" class="hover:text-red-400">Blog</a>
+            <a href="#" class="font-bold text-red-400">Works</a>
+            <a href="../contact/" class="hover:text-red-400">Contact</a>
+          </nav>
+          <button class="md:hidden text-3xl main-color">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main class="mt-[60px] lg:mt-[120px] grow">
+      <section class="page-section space-y-[18px] lg:space-y-[55px]">
+        <h1
+          class="text-[30px] lg:text-[44px] font-bold leading-[60px] main-color"
+        >
+          Works
+        </h1>
+        <div
+          class="border-b border-b-gray-200 pb-7 flex flex-col md:flex-row gap-4.5"
+        >
+          <img
+            src="../src/assets/blog01.jpg"
+            class="rounded-md w-full h-full md:h-[180px] md:w-[243px] object-cover"
+            alt="designing"
+          />
+          <div class="space-y-5">
+            <a
+              href="./dashboard"
+              class="text-2xl md:text-3xl font-bold main-color block"
+              >Designing Dashboards</a
+            >
+            <div class="gap-x-[22px] md:gap-x-[26px] flex border-box">
+              <p class="badge">2020</p>
+              <p class="text-[#8695A4] text-base md:text-xl">Dashboard</p>
+            </div>
+            <p class="main-color">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
+            </p>
+          </div>
+        </div>
+        <div
+          class="border-b border-b-gray-200 pb-7 flex flex-col md:flex-row gap-4.5"
+        >
+          <img
+            src="../src/assets/blog02.jpg"
+            class="rounded-md w-full h-full md:h-[180px] md:w-[243px] object-cover"
+            alt="vibrant-portraits"
+          />
+          <div class="space-y-5">
+            <a
+              href="./dashboard/"
+              class="text-2xl md:text-3xl font-bold main-color block"
+              >Vibrant Portraits of 2020</a
+            >
+            <div class="gap-x-[22px] md:gap-x-[26px] flex border-box">
+              <p class="badge">2018</p>
+              <p class="text-[#8695A4] text-base md:text-xl">Illustration</p>
+            </div>
+            <p class="main-color">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
+            </p>
+          </div>
+        </div>
+        <div
+          class="border-b border-b-gray-200 pb-7 flex flex-col md:flex-row gap-4.5"
+        >
+          <img
+            src="../src/assets/blog03.jpg"
+            class="rounded-md w-full h-full md:h-[180px] md:w-[243px] object-cover"
+            alt="36-days"
+          />
+          <div class="space-y-5">
+            <a
+              href="./dashboard/"
+              class="text-2xl md:text-3xl font-bold main-color block"
+              >36 Days of Malayalam type</a
+            >
+            <div class="gap-x-[22px] md:gap-x-[26px] flex border-box">
+              <p class="badge">2018</p>
+              <p class="text-[#8695A4] text-base md:text-xl">Typography</p>
+            </div>
+            <p class="main-color">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer
+      class="py-[54px] main-color flex flex-col items-center justify-center gap-y-[26px] relative top-0"
+    >
+      <div class="flex items-center text-3xl gap-[35px]">
+        <a href="#">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a href="#">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="#">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+        <a href="#">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </div>
+      <h2 class="text-sm">Copyright &copy;2025 All rights reserved</h2>
+    </footer>
+  </body>
+</html>

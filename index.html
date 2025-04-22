@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style type="text/tailwindcss">
+      * {
+        font-family: "Heebo", sans-serif;
+      }
+      @layer base {
+        .main-color {
+          @apply text-[#21243D];
+        }
+        .light-bg-color {
+          @apply bg-[#EDF7FA];
+        }
+        .page-section {
+          @apply max-w-[1280px] mx-auto p-8;
+        }
+        .badge {
+          @apply bg-[#142850] pt-[1px] md:pt-0 px-2.5 rounded-2xl text-white text-base md:text-lg font-black h-[25px];
+        }
+      }
+    </style>
+    <title>My Page</title>
+  </head>
+  <body class="min-h-screen flex flex-col">
+    <header class="bg-white fixed inset-0 bottom-auto">
+      <div
+        class="flex items-center max-w-[1360px] justify-between mx-auto px-8 py-4 w-full"
+      >
+        <a href="./" class="text-xl font-medium">HOME</a>
+        <div>
+          <nav class="hidden md:flex gap-8 items-center text-xl font-medium">
+            <a href="./blog" class="hover:text-red-400">Blog</a>
+            <a href="./work" class="hover:text-red-400">Works</a>
+            <a href="./contact/" class="hover:text-red-400">Contact</a>
+          </nav>
+          <button class="md:hidden text-3xl main-color">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main class="mt-[60px] lg:mt-40 grow">
+      <section class="text-center lg:text-left page-section space-y-10 mb-10">
+        <div
+          class="flex flex-col-reverse lg:flex-row items-center justify-between gap-8 lg:gap-20 w-full"
+        >
+          <div class="space-y-10 w-full lg:w-2/3">
+            <h1 class="text-[44px] font-bold leading-[60px] main-color">
+              Hi, I am Mark, <br />Full-stack Developer
+            </h1>
+            <p class="main-color text-base lg:pr-5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
+              animi placeat quisquam quos nemo voluptatum quibusdam voluptas
+              odio provident. Quod ipsum omnis tempore vitae quae rem minima
+              excepturi accusantium sapiente. A deserunt odio minus laborum
+              dolorum. Ducimus, fugiat rerum perferendis omnis dolore, nihil, a
+              aspernatur voluptatum voluptate error sequi placeat. Error
+              consequatur hic quod provident cumque iusto suscipit consequuntur
+              sapiente!
+            </p>
+          </div>
+          <div class="w-full lg:w-1/3">
+            <img
+              src="./src/assets/profile.jpg"
+              alt="profile"
+              class="max-w-[280px] w-full h-auto rounded-full mx-auto md:ml-auto light-bg-color"
+            />
+          </div>
+        </div>
+        <button
+          class="rounded-xs bg-red-400 px-5 h-12 text-white hover:bg-red-300 cursor-pointer text-xl w-fit"
+        >
+          Download Resume
+        </button>
+      </section>
+
+      <section class="light-bg-color">
+        <div class="page-section space-y-5">
+          <div class="flex items-center justify-center md:justify-between">
+            <h2 class="text-lg md:text-[22px]">Recent posts</h2>
+            <a
+              href="./blog/"
+              class="hidden md:block text-[#00A8CC] hover:underline"
+              >View all</a
+            >
+          </div>
+          <div class="grid md:grid-cols-2 gap-5">
+            <div class="rounded-sm bg-white p-6 main-color space-y-5">
+              <h3
+                class="text-[22px] md:text-[26px] font-bold leading-[30px] md:leading-[38px]"
+              >
+                Making a design system from scratch
+              </h3>
+              <div
+                class="space-x-4 flex border-box items-center text-base md:text-lg"
+              >
+                <p>12 Feb 2025</p>
+                <p class="border-l pl-4">Design, Pattern</p>
+              </div>
+              <p>
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet.
+              </p>
+            </div>
+            <div class="rounded-sm bg-white p-6 main-color space-y-5">
+              <h3
+                class="text-[22px] md:text-[26px] font-bold leading-[30px] md:leading-[38px]"
+              >
+                Making a design system from scratch
+              </h3>
+              <div
+                class="space-x-4 flex border-box items-center text-base md:text-lg"
+              >
+                <p>12 Feb 2025</p>
+                <p class="border-l pl-4">Design, Pattern</p>
+              </div>
+              <p>
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="page-section space-y-[26px]">
+        <h2 class="text-center md:text-left text-lg md:text-[22px]">
+          Featured works
+        </h2>
+        <div
+          class="border-b border-b-gray-200 pb-7 flex flex-col md:flex-row gap-4.5"
+        >
+          <img
+            src="./src/assets/blog01.jpg"
+            class="rounded-md w-full h-full md:h-[180px] md:w-[243px] object-cover"
+            alt="designing"
+          />
+          <div class="space-y-5">
+            <a
+              href="./work/dashboard/"
+              class="text-2xl md:text-3xl font-bold main-color block"
+              >Designing Dashboards</a
+            >
+            <div class="gap-x-[22px] md:gap-x-[26px] flex border-box">
+              <p class="badge">2020</p>
+              <p class="text-[#8695A4] text-base md:text-xl">Dashboard</p>
+            </div>
+            <p class="main-color">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
+            </p>
+          </div>
+        </div>
+        <div
+          class="border-b border-b-gray-200 pb-7 flex flex-col md:flex-row gap-4.5"
+        >
+          <img
+            src="./src/assets/blog02.jpg"
+            class="rounded-md w-full h-full md:h-[180px] md:w-[243px] object-cover"
+            alt="vibrant-portraits"
+          />
+          <div class="space-y-5">
+            <a
+              href="./work/dashboard/"
+              class="text-2xl md:text-3xl font-bold main-color block"
+              >Vibrant Portraits of 2020</a
+            >
+            <div class="gap-x-[22px] md:gap-x-[26px] flex border-box">
+              <p class="badge">2018</p>
+              <p class="text-[#8695A4] text-base md:text-xl">Illustration</p>
+            </div>
+            <p class="main-color">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
+            </p>
+          </div>
+        </div>
+        <div
+          class="border-b border-b-gray-200 pb-7 flex flex-col md:flex-row gap-4.5"
+        >
+          <img
+            src="./src/assets/blog03.jpg"
+            class="rounded-md w-full h-full md:h-[180px] md:w-[243px] object-cover"
+            alt="36-days"
+          />
+          <div class="space-y-5">
+            <a
+              href="./work/dashboard/"
+              class="text-2xl md:text-3xl font-bold main-color block"
+              >36 Days of Malayalam type</a
+            >
+            <div class="gap-x-[22px] md:gap-x-[26px] flex border-box">
+              <p class="badge">2018</p>
+              <p class="text-[#8695A4] text-base md:text-xl">Typography</p>
+            </div>
+            <p class="main-color">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer
+      class="py-[54px] main-color flex flex-col items-center justify-center gap-y-[26px] relative top-0"
+    >
+      <div class="flex items-center text-3xl gap-[35px]">
+        <a href="#">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a href="#">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="#">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+        <a href="#">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </div>
+      <h2 class="text-sm">Copyright &copy;2025 All rights reserved</h2>
+    </footer>
+  </body>
+</html>
